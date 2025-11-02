@@ -17,6 +17,7 @@
       color: #e9ecef;
       min-height: 100vh;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
       padding: 25px;
@@ -97,6 +98,13 @@
       box-shadow: 0 0 15px rgba(74, 198, 214, 0.2);
     }
 
+    footer {
+      margin-top: 25px;
+      font-size: 0.9rem;
+      color: #d6d6d6;
+      opacity: 0.85;
+    }
+
     @keyframes pulse {
       0%, 100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
       50% { box-shadow: 0 0 35px rgba(255, 215, 0, 1); }
@@ -149,6 +157,10 @@
       .notice {
         font-size: 0.88rem;
       }
+
+      footer {
+        font-size: 0.85rem;
+      }
     }
   </style>
 </head>
@@ -168,11 +180,14 @@
 
     <div class="notice">
       We’ve noted a minor correction in the first edition of <em>The Star and The Scars.</em>
-      On <strong>page 13</strong>, the question section currently reads “Comprehensive Questions.”
-      This will be updated to “Comprehension Questions” in the next edition.<br><br>
-      Thank you for reading and supporting this work!
+      On <strong>page 13</strong>, the question section currently reads “Comprehensive Questions.” 
+      This will be updated to “Comprehension Questions” in the next edition.
     </div>
   </div>
+
+  <footer>
+    Thank you for reading and supporting this work!
+  </footer>
 
 </body>
 </html>
