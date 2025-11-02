@@ -13,8 +13,8 @@
 
     body {
       font-family: 'Poppins', sans-serif;
-      background: radial-gradient(circle at top, #141422 0%, #0b0b0c 100%);
-      color: #f4f4f4;
+      background: radial-gradient(circle at 20% 30%, #0d1b2a, #000814 80%);
+      color: #e9ecef;
       min-height: 100vh;
       display: flex;
       justify-content: center;
@@ -24,23 +24,23 @@
     }
 
     .container {
-      background: rgba(255, 255, 255, 0.05);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      border-radius: 20px;
-      padding: 35px 28px;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 22px;
+      padding: 40px 30px;
       max-width: 520px;
       width: 100%;
-      backdrop-filter: blur(12px);
-      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+      backdrop-filter: blur(14px);
+      box-shadow: 0 8px 30px rgba(13, 27, 42, 0.6);
       animation: fadeIn 1.2s ease-in-out;
       position: relative;
     }
 
     .info-circle {
-      background: #ffd700;
-      color: #1b1b23;
-      width: 65px;
-      height: 65px;
+      background: linear-gradient(135deg, #ffd700, #ffbb00);
+      color: #1a1a1a;
+      width: 70px;
+      height: 70px;
       border-radius: 50%;
       display: flex;
       justify-content: center;
@@ -48,48 +48,58 @@
       font-size: 30px;
       font-weight: bold;
       box-shadow: 0 0 25px rgba(255, 215, 0, 0.6);
-      animation: pulse 2s infinite ease-in-out;
+      animation: pulse 2.5s infinite ease-in-out;
       position: absolute;
       top: -35px;
       left: 50%;
       transform: translateX(-50%);
-      border: 3px solid #0b0b0c;
+      border: 3px solid #0d1b2a;
     }
 
     h1 {
-      font-size: 1.8rem;
-      color: #4cb9d4;
-      margin-top: 40px;
+      font-size: 1.9rem;
+      color: #4ac6d6;
+      margin-top: 45px;
       margin-bottom: 18px;
       letter-spacing: 1px;
+      text-shadow: 0 0 10px rgba(74, 198, 214, 0.3);
     }
 
     p {
       font-size: 1.05rem;
-      line-height: 1.7;
-      color: #eaeaea;
+      line-height: 1.75;
+      color: #f1f1f1;
       margin-bottom: 25px;
     }
 
     .highlight {
-      color: #ffb74d;
+      color: #ffd166;
       font-weight: 600;
+    }
+
+    .contact-note {
+      display: block;
+      font-size: 0.96rem;
+      color: #a6e1fa;
+      margin-top: 12px;
     }
 
     .notice {
       font-size: 0.95rem;
       line-height: 1.6;
-      color: #cfcfcf;
-      background: rgba(255, 255, 255, 0.08);
+      color: #f8f9fa;
+      background: rgba(255, 255, 255, 0.06);
       padding: 18px;
       border-radius: 12px;
-      border-left: 4px solid #4cb9d4;
-      border-right: 4px solid #4cb9d4;
+      border-left: 4px solid #ffd166;
+      border-right: 4px solid #ffd166;
+      margin-top: 20px;
+      box-shadow: 0 0 15px rgba(74, 198, 214, 0.2);
     }
 
     @keyframes pulse {
       0%, 100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.5); }
-      50% { box-shadow: 0 0 35px rgba(255, 215, 0, 0.9); }
+      50% { box-shadow: 0 0 35px rgba(255, 215, 0, 1); }
     }
 
     @keyframes fadeIn {
@@ -100,7 +110,7 @@
     /* Tablet */
     @media (max-width: 768px) {
       .container {
-        padding: 30px 22px;
+        padding: 32px 22px;
       }
       h1 {
         font-size: 1.6rem;
@@ -151,6 +161,9 @@
       How far can faith take a boy born into nothing? Maybe far enough to defy the odds stacked against him.
       <span class="highlight">Irawo's</span> name means <em>star</em>, but nothing about his early life shines.
       Find out how he rose against the odds in <strong>The Star and The Scars</strong>.
+       <span class="contact-note">
+        To request a copy or make bulk orders, please contact the author through the page that directed you here.
+      </span>
     </p>
 
     <div class="notice">
